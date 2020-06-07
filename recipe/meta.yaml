@@ -1,11 +1,11 @@
 package:
     name: visionworkbench
-    version: d6e659b4399d2e3422a8a8267779fa4440359e80
+    version: 2.6.2
 
 source:
-    git_url: https://github.com/visionworkbench/visionworkbench.git
-    git_rev: d6e659b4399d2e3422a8a8267779fa4440359e80
-    patches:
+    fn: 2.6.2.tar.gz
+    url: https://github.com/visionworkbench/visionworkbench/archive/2.6.2.tar.gz
+    sha256sum: 9703e130b2c100b8aafbce64d8f57c98d5d7895f02c40633346e8eee521e8fbb
 
 build:
     number: 0
@@ -42,6 +42,11 @@ requirements:
         - glog                      0.4.0
         - ceres-solver              1.14.0
         - parallel                  20200522
+        - flann                     1.9.1
+        - opencv                    3.2.0
+        - boost                     1.68.0
+        - liblapack                 3.8.0
+        - blas                      1.1
 
     run:
         - gdal                      2.0.2
@@ -74,6 +79,11 @@ requirements:
         - glog                      0.4.0
         - ceres-solver              1.14.0
         - parallel                  20200522
+        - flann                     1.9.1
+        - opencv                    3.2.0
+        - boost                     1.68.0
+        - liblapack                 3.8.0
+        - blas                      1.1
 
 test:
     files:
