@@ -2,6 +2,9 @@
 
 set -e
 
+export CPPFLAGS="-I$PREFIX/include"
+export LDFLAGS="-L$PREFIX/lib"
+
 mkdir build
 cd build
 
@@ -13,8 +16,8 @@ echo "PREFIX=${PREFIX}"
 cmake ..                                        \
     -DCMAKE_PREFIX_PATH=${PREFIX}               \
     -DCMAKE_INSTALL_PREFIX:PATH=${PREFIX}       \
-    -DISIS_DEPS_DIR=${BUILD_PREFIX}             \
-    -DBINARYBUILDER_INSTALL_DIR=${BUILD_PREFIX} \
+    -DISIS_DEPS_DIR=${PREFIX}                   \
+    -DBINARYBUILDER_INSTALL_DIR=${PREFIX}       \
     -DCMAKE_VERBOSE_MAKEFILE=ON                 \
     # -DVW_ENABLE_SSE=0 #  on pfe
 

@@ -15,37 +15,37 @@ requirements:
     build:
         - {{ compiler('c') }}
         - {{ compiler('cxx') }}
-        - cmake                     3.14.5
+        - cmake
+    host:
         - gdal                      2.0.2
-        - ilmbase                   2.3.0
-        - openexr                   2.3.0
-        - eigen                     3.3.7
-        - pbzip2                    1.1.13
-        - gflags                    2.2.2
-        - glog                      0.4.0
-        - ceres-solver              1.14.0
-        - parallel                  20200522
-        - flann                     1.9.1
-        - opencv                    3.2.0
-        - boost                     1.68.0
-        - liblapack                 3.8.0
-        - blas                      1.1
-
+        - ilmbase
+        - openexr
+        - eigen
+        - pbzip2
+        - gflags
+        - glog
+        - ceres-solver
+        - parallel
+        - flann                     1.9.*
+        - opencv                    3.*
+        - boost                     1.68
+        - liblapack
+        - blas
     run:
         - gdal                      2.0.2
-        - ilmbase                   2.3.0
-        - openexr                   2.3.0
-        - eigen                     3.3.7
-        - pbzip2                    1.1.13
-        - gflags                    2.2.2
-        - glog                      0.4.0
-        - ceres-solver              1.14.0
-        - parallel                  20200522
-        - flann                     1.9.1
-        - opencv                    3.2.0
-        - boost                     1.68.0
-        - liblapack                 3.8.0
-        - blas                      1.1
+        - ilmbase
+        - openexr
+        - eigen
+        - pbzip2
+        - gflags
+        - glog
+        - ceres-solver
+        - parallel
+        - flann                     1.9.*
+        - opencv                    3.*
+        - boost                     1.68
+        - liblapack
+        - blas
 
 test:
     files:
