@@ -1,12 +1,11 @@
-{% set version = "2.6.2" %}
+{% set version = "115208e" %}
 package:
     name: visionworkbench
     version: {{ version }}
 
 source:
-    fn: {{ version }}.tar.gz
-    url: https://github.com/visionworkbench/visionworkbench/archive/{{ version }}.tar.gz
-    sha256sum: 9703e130b2c100b8aafbce64d8f57c98d5d7895f02c40633346e8eee521e8fbb
+  git_url: git@github.com:visionworkbench/visionworkbench.git
+  git_tag: {{ version }}
 
 build:
     number: 0
@@ -31,6 +30,11 @@ requirements:
         - boost                     1.68
         - liblapack
         - blas
+        - geotiff                   1.4.2
+        - proj4                     4.9.3
+        - geos                      3.7.3
+        - hdf5                      1.8.*
+
     run:
         - gdal                      2.0.2
         - ilmbase
@@ -46,6 +50,10 @@ requirements:
         - boost                     1.68
         - liblapack
         - blas
+        - geotiff                   1.4.2
+        - proj4                     4.9.3
+        - geos                      3.7.3
+        - hdf5                      1.8.*
 
 test:
     files:

@@ -11,8 +11,6 @@ cd build
 # Fix for missing liblzma.
 perl -pi -e "s#(/[^\s]*?lib)/lib([^\s]+).la#-L\$1 -l\$2#g" ${PREFIX}/lib/*.la
 
-echo "PREFIX=${PREFIX}"
-
 cmake ..                                        \
     -DCMAKE_PREFIX_PATH=${PREFIX}               \
     -DCMAKE_INSTALL_PREFIX:PATH=${PREFIX}       \
