@@ -1,4 +1,4 @@
-{% set version = "115208e" %}
+{% set version = "5fa5db0" %}
 package:
     name: visionworkbench
     version: {{ version }}
