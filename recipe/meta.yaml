@@ -1,4 +1,4 @@
-{% set version = "5fa5db0" %}
+{% set version = "02f1f9f" %}
 package:
     name: visionworkbench
     version: {{ version }}
@@ -12,9 +12,11 @@ build:
 
 requirements:
     build:
-        - {{ compiler('c') }}
-        - {{ compiler('cxx') }}
+        - {{ compiler('c') }}    # [linux]
+        - {{ compiler('cxx') }}  # [linux]
         - cmake
+        - llvm-openmp  # [osx]
+#       - libgomp      # [linux]
     host:
         - gdal                      2.0.2
         - ilmbase
@@ -23,10 +25,12 @@ requirements:
         - pbzip2
         - gflags
         - glog
-        - ceres-solver
+        - suitesparse               5.7.2
+        - ceres-solver              1.14.0
         - parallel
-        - flann                     1.9.*
-        - opencv                    3.*
+        - flann                     1.9.1
+        - opencv                    3.2.0
+        - openmp # [linux]
         - boost                     1.68
         - liblapack
         - blas
@@ -43,10 +47,12 @@ requirements:
         - pbzip2
         - gflags
         - glog
-        - ceres-solver
+        - suitesparse               5.7.2
+        - ceres-solver              1.14.0
         - parallel
-        - flann                     1.9.*
-        - opencv                    3.*
+        - flann                     1.9.1
+        - opencv                    3.2.0
+        - openmp # [linux]
         - boost                     1.68
         - liblapack
         - blas
@@ -63,7 +69,7 @@ test:
 
 about:
     home: https://github.com/visionworkbench/visionworkbench
-    license: Apache II
+    license: APACHE
     summary: 
 
 extra:
