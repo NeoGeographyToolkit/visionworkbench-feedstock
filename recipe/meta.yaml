@@ -70,7 +70,7 @@ test:
 about:
     home: https://github.com/visionworkbench/visionworkbench
     license: APACHE
-    summary: 
+    summary: A general purpose image processing and computer vision library
 
 extra:
   recipe-maintainers:
