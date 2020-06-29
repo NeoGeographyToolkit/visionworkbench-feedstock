@@ -1,17 +1,20 @@
-{% set version = "02f1f9f" %}
+# The ASP and VW versions can either be tags or git commit hashes.
+# The VW and ASP meta.yaml files must use the same value for vw_version.
+{% set vw_version = "2.7.0" %}
 package:
     name: visionworkbench
-    version: {{ version }}
+    version: {{ vw_version }}
 
 source:
   git_url: git@github.com:visionworkbench/visionworkbench.git
-  git_tag: {{ version }}
+  git_tag: {{ vw_version }}
 
 build:
     number: 0
 
 requirements:
     build:
+# Use the local compiler for OSX. See build.sh for details.
         - {{ compiler('c') }}    # [linux]
         - {{ compiler('cxx') }}  # [linux]
         - cmake
