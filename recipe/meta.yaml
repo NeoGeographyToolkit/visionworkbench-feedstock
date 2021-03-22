@@ -43,7 +43,7 @@ requirements:
         - proj4                     4.9.3
         - geos                      3.7.3
         - hdf5                      1.8.18
-        - isis                      4.4.0
+        - isis                      4.4.0 # to catch dependency problems
 
     run:
         - gdal                      isis4.4.0
@@ -65,7 +65,7 @@ requirements:
         - proj4                     4.9.3
         - geos                      3.7.3
         - hdf5                      1.8.18
-        - isis                      4.4.0
+        - isis                      4.4.0 # to catch dependency problems
 
 test:
     files:
