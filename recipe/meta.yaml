@@ -28,13 +28,15 @@ requirements:
         - ilmbase
         - openexr
         - eigen                     3.3.7
-        - gflags
-        - glog
+        - gflags                    2.2.2
+        - glog                      0.4.0
         - suitesparse               5.10.1
         - parallel
         - flann                     1.9.1
         - opencv                    3.2.0
-        - openmp                    # [linux]
+        - openssl                   1.0.2u
+        - libssh2                   1.8.0
+        - openmp                    8.0.1 # [linux]
         - boost                     1.68.0
         - liblapack                 3.8.0
         - blas                      1.1
@@ -48,13 +50,15 @@ requirements:
         - ilmbase
         - openexr
         - eigen                     3.3.7
-        - gflags
-        - glog
+        - gflags                    2.2.2
+        - glog                      0.4.0
         - suitesparse               5.10.1
         - parallel
         - flann                     1.9.1
         - opencv                    3.2.0
-        - openmp                    # [linux]
+        - openssl                   1.0.2u
+        - libssh2                   1.8.0
+        - openmp                    8.0.1 # [linux]
         - boost                     1.68.0
         - liblapack                 3.8.0
         - blas                      1.1
