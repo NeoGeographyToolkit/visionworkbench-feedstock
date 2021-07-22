@@ -24,7 +24,7 @@ requirements:
         - llvm-openmp  # [osx]
 #       - libgomp      # [linux]
     host:
-        - libgdal                       2.4.1_isis5.0.1
+        - libgdal                   2.4.1_isis5.0.1
         - ilmbase
         - openexr
         - flann                     1.9.1
@@ -40,7 +40,7 @@ requirements:
         - hdf5                      1.8.18
 
     run:
-        - libgdal                       2.4.1_isis5.0.1
+        - libgdal                   2.4.1_isis5.0.1
         - ilmbase
         - openexr
         - flann                     1.9.1
