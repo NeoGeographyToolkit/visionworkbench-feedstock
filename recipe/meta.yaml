@@ -1,8 +1,9 @@
 # Ensure that the VW and ASP meta.yaml files are in sync with each other and with 
 # ISIS. 
-# Specify the correct tag in git_tag, for example, 2.7.0, or a commit hash.
+# Specify the correct tag in git_tag, for example, 3.0.0, or a commit hash.
 
-{% set version = "isis5.0.1" %} # synched up to isis dependencies for this version
+#{% set version = "isis5.0.1" %} # synched up to isis dependencies for this version
+{% set version = "3.0.0" %}
 
 package:
     name: visionworkbench
@@ -10,7 +11,8 @@ package:
 
 source:
   git_url: git@github.com:visionworkbench/visionworkbench.git
-  git_tag: 9e8796c # ensure the correct tag here
+  #git_tag: 9048618 # ensure the correct tag here
+  git_tag: 3.0.0 # ensure the correct tag here
 
 build:
     number: 0
