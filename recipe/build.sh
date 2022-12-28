@@ -20,6 +20,7 @@ cmake ..                             \
 make -j${CPU_COUNT}
 make install
 
+# TODO(oalexan1): Wipe this for the next release as this tool will not be there
 # This tool is not needed and conflicts with other tools
 rm -fv ${PREFIX}/bin/blend
 
