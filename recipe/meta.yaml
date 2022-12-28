@@ -10,15 +10,13 @@ package:
 
 source:
   git_url: git@github.com:visionworkbench/visionworkbench.git
-  #git_tag: 9048618 # ensure the correct tag here
-  git_tag: 3.2.0 # ensure the correct tag here
+  git_tag: 3.2.0 # use tag or hash
 
 build:
     number: 0
 
 requirements:
     build:
-# Use the local compiler for OSX. See build.sh for details.
         - {{ compiler('c') }} 
         - {{ compiler('cxx') }}
         - cmake 3.15.5
