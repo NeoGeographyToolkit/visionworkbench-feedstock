@@ -1,8 +1,8 @@
 # Ensure that the VW and ASP meta.yaml files are in sync with each other and with 
 # ISIS. 
-# Specify the correct tag in git_tag, for example, 3.1.0, or a commit hash.
+# Specify the correct tag in git_tag, for example, 3.3.0, or a commit hash.
 
-{% set version = "3.2.0" %} # synched up to isis dependencies for this version
+{% set version = "3.3.0" %} # synched up to isis dependencies for this version
 
 package:
     name: visionworkbench
@@ -22,36 +22,36 @@ requirements:
         - cmake 3.15.5
         
     host:
-        - libgdal                   3.5_isis7
-        - llvm-openmp               15.0.6
+        - libgdal                   3.5_isis8
+        - llvm-openmp               16.0.6
         - ilmbase                   2.5.5
         - openexr                   2.5.5
         - flann                     1.9.1
-        - opencv                    4.6.0
-        - openssl                   1.1.1s
+        - opencv                    4.5.5
+        - openssl                   1.1.1v
         - libssh2                   1.10.0
         - boost                     1.72.0
         - openblas
         - liblapack                 3.9.0
-        - blas                      2.116
+        - blas                      2.117
         - proj                      9.1.0
-        - hdf5                      1.12.2
+        - hdf5                      1.12.1
   
     run:
-        - libgdal                   3.5_isis7
-        - llvm-openmp               15.0.6
+        - libgdal                   3.5_isis8
+        - llvm-openmp               16.0.6
         - ilmbase                   2.5.5
         - openexr                   2.5.5
         - flann                     1.9.1
-        - opencv                    4.6.0
-        - openssl                   1.1.1s
+        - opencv                    4.5.5
+        - openssl                   1.1.1v
         - libssh2                   1.10.0
         - boost                     1.72.0
         - openblas
         - liblapack                 3.9.0
-        - blas                      2.116
+        - blas                      2.117
         - proj                      9.1.0
-        - hdf5                      1.12.2
+        - hdf5                      1.12.1
 
 test:
     files:
