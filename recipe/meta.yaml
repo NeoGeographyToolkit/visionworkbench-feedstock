@@ -9,7 +9,8 @@ package:
 
 source:
   git_url: git@github.com:visionworkbench/visionworkbench.git
-  git_tag: {{ version }}
+# No git tag. Just built latest. More convenient this way.  
+#  git_tag: {{ version }}
 
 build:
     number: 0
