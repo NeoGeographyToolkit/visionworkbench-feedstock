@@ -11,14 +11,13 @@ cd build
 # Recommended in https://gitter.im/conda-forge/conda-forge.github.io?at=5c40da7f95e17b45256960ce
 find ${PREFIX}/lib -name '*.la' -delete
 
-isMac=$(uname -s | grep Darwin)
-if [ "$isMac" != "" ]; then
+if [[ $target_platform =~ linux.* ]]; then
+  opt=""
+else
   # Having trouble with the conda compiler on the mac for ipfind and convert_pinhole_model  
   #opt="-DCMAKE_C_COMPILER=/usr/bin/clang -DCMAKE_CXX_COMPILER=/usr/bin/clang++"
   #echo old CXXFLAGS=$CXXFLAGS
   export CXXFLAGS=""
-  opt=""
-else
   opt=""
 fi
 
