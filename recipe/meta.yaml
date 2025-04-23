@@ -1,7 +1,6 @@
 # Ensure that the VW and ASP meta.yaml files are in sync with each other and with 
 # ISIS. 
-# Specify the correct tag in git_tag, for example, 3.3.0, or a commit hash.
-{% set version = "asp3.4.0_alpha" %}
+{% set version = "asp3.5.0" %}
 
 package:
     name: visionworkbench
@@ -22,36 +21,36 @@ requirements:
         - cmake
 
     host:
-        - libgdal                   3.8.1
-        - llvm-openmp               17.0.6
+        - libgdal                   3.7.1
+        - llvm-openmp               16.0.6
         - ilmbase                   2.5.5
-        - openexr                   2.5.5
-        - flann                     1.9.2
-        - opencv                    4.8.1
-        - openssl                   3.2.0
+        - openexr                   3.2.2
+        - flann                     1.9.1
+        - opencv                    4.7.0
+        - openssl                   3.1.8
         - libssh2                   1.11.0
-        - boost                     1.82.0
+        - boost                     1.78.0
         - openblas
         - liblapack                 3.9.0
-        - blas                      2.120
-        - proj                      9.3.0
-        - hdf5                      1.14.2
+        - blas                      2.131
+        - proj                      9.2.1
+        - hdf5                      1.14.1
   
     run:
-        - libgdal                   3.8.1
-        - llvm-openmp               17.0.6
+        - libgdal                   3.7.1
+        - llvm-openmp               16.0.6
         - ilmbase                   2.5.5
-        - openexr                   2.5.5
-        - flann                     1.9.2
-        - opencv                    4.8.1
-        - openssl                   3.2.0
+        - openexr                   3.2.2
+        - flann                     1.9.1
+        - opencv                    4.7.0
+        - openssl                   3.1.8
         - libssh2                   1.11.0
-        - boost                     1.82.0
+        - boost                     1.78.0
         - openblas
         - liblapack                 3.9.0
-        - blas                      2.120
-        - proj                      9.3.0
-        - hdf5                      1.14.2
+        - blas                      2.131
+        - proj                      9.2.1
+        - hdf5                      1.14.1
 
 test:
     files:
