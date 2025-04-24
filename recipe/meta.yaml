@@ -23,8 +23,8 @@ requirements:
     host:
         - libgdal                   3.7.1
         - llvm-openmp               16.0.6
-        - ilmbase                   2.5.5
-        - openexr                   3.2.2
+        - nasa-ames-stereo-pipeline::ilmbase                   2.5.5
+        - nasa-ames-stereo-pipeline::openexr                   2.5.5
         - flann                     1.9.1
         - opencv                    4.7.0
         - openssl                   3.1.8
@@ -39,8 +39,8 @@ requirements:
     run:
         - libgdal                   3.7.1
         - llvm-openmp               16.0.6
-        - ilmbase                   2.5.5
-        - openexr                   3.2.2
+        - nasa-ames-stereo-pipeline::ilmbase                   2.5.5
+        - nasa-ames-stereo-pipeline::openexr                   2.5.5
         - flann                     1.9.1
         - opencv                    4.7.0
         - openssl                   3.1.8
