@@ -16,9 +16,12 @@ build:
 
 requirements:
     build:
-        - {{ compiler('c') }} 
-        - {{ compiler('cxx') }}
-        - cmake
+        # Old boost is failing to compile with new clang. Hopefully
+        # this will go away when boost is upgraded.
+        - {{ compiler('c') }}  # [not 'osx']
+        - {{ compiler('cxx') }}  # [not 'osx']
+        - clang >=16,<17  # ['osx']
+        - cmake >=3.10
 
     host:
         - libgdal                   3.7.1
