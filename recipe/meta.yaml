@@ -3,8 +3,8 @@
 {% set version = "asp3.5.0" %}
 
 package:
-    name: visionworkbench
-    version: {{ version }}
+  name: visionworkbench
+  version: {{ version }}
 
 source:
   git_url: git@github.com:visionworkbench/visionworkbench.git
@@ -12,7 +12,7 @@ source:
 #  git_tag: {{ version }}
 
 build:
-  number: 1
+  number: 2
 
 requirements:
     build:
