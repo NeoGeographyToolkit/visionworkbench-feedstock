@@ -18,11 +18,13 @@ requirements:
     build:
         # Old boost is failing to compile with new clang. Hopefully
         # this will go away when boost is upgraded.
+        # TODO(oalexan1): Once the stereopipeline recipe is validated,
+        # update here to use the same layout as in that recipe.
+        - cmake 3.27.9
         - clang >=16,<17         # ['osx']
         - clangxx >=16,<17       # ['osx']
         - gcc_linux-64 >=11,<12  # [linux]
         - gxx_linux-64 >=11,<12  # [linux]
-        - cmake 3.27.9
 
     host:
         - clang >=16,<17         # ['osx']
