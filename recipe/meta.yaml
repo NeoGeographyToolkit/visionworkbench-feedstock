@@ -34,31 +34,51 @@ requirements:
         - nasa-ames-stereo-pipeline::ilmbase                   2.5.5
         - nasa-ames-stereo-pipeline::openexr                   2.5.5
         - flann                     1.9.1
-        - opencv                    4.7.0
         - openssl                   3.1.8
         - libssh2                   1.11.0
-        - boost                     1.78.0
-        - openblas                  0.3.29
-        - liblapack                 3.9.0
         - blas                      2.131
+        - blas-devel                3.9.0
+        - libblas                   3.9.0
+        - libcblas                  3.9.0
+        - liblapack                 3.9.0
+        - liblapacke                3.9.0
+        - libopenblas               0.3.29
+        - openblas                  0.3.29
+        - libopencv                 4.7.0
+        - opencv                    4.7.0
         - proj                      9.2.1
         - hdf5                      1.14.1
-  
+        - libzlib                   1.3.1
+        - zlib                      1.3.1
+        - boost                     1.78.0
+        - boost-cpp                 1.78.0
+        - libcxx                    19.1.7
+        - libcxxabi                 19.1.7
+
     run:
         - libgdal                   3.7.1
         - llvm-openmp               16.0.6
         - nasa-ames-stereo-pipeline::ilmbase                   2.5.5
         - nasa-ames-stereo-pipeline::openexr                   2.5.5
         - flann                     1.9.1
-        - opencv                    4.7.0
         - openssl                   3.1.8
         - libssh2                   1.11.0
-        - boost                     1.78.0
-        - openblas                   0.3.29
-        - liblapack                 3.9.0
         - blas                      2.131
+        - blas-devel                3.9.0
+        - libblas                   3.9.0
+        - libcblas                  3.9.0
+        - liblapack                 3.9.0
+        - liblapacke                3.9.0
+        - libopenblas               0.3.29
+        - openblas                  0.3.29
+        - libopencv                 4.7.0
+        - opencv                    4.7.0
         - proj                      9.2.1
         - hdf5                      1.14.1
+        - libzlib                   1.3.1
+        - zlib                      1.3.1
+        - boost                     1.78.0
+        - boost-cpp                 1.78.0
 
 test:
     files:
