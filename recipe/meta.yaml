@@ -45,7 +45,13 @@ requirements:
         - zlib                      1.3.1
         - boost                     1.78.0
         - boost-cpp                 1.78.0
-        - libcxx                    19.1.7
+        - libboost
+        - libstdcxx
+        - libgcc
+        - libjpeg-turbo
+        - libtiff
+        - libpng
+        - lz4-c
 
     run:
         - libgdal                   3.7.1
@@ -71,7 +77,13 @@ requirements:
         - zlib                      1.3.1
         - boost                     1.78.0
         - boost-cpp                 1.78.0
-        - libcxx                    19.1.7
+        - libboost
+        - libstdcxx
+        - libgcc
+        - libjpeg-turbo
+        - libtiff
+        - libpng
+        - lz4-c
 
 test:
     files:
