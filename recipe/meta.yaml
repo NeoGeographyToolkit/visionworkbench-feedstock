@@ -52,6 +52,7 @@ requirements:
         - lz4-c
         - libstdcxx  # [linux]
         - libgcc  # [linux]
+        - libcxx  # [osx]
 
     run:
         - libgdal                   3.7.1
@@ -84,6 +85,7 @@ requirements:
         - lz4-c
         - libstdcxx   # [linux]
         - libgcc  # [linux]
+        - libcxx  # [osx]
 
 test:
     files:
