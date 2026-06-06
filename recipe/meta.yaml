@@ -9,8 +9,8 @@ source:
   git_rev: {{ version }}
 
 build:
-    number: 4
-    string: asp_4
+    number: 5
+    string: asp_5
     skip: true  # [win]
 
 requirements:
@@ -32,6 +32,7 @@ requirements:
         - zlib
         - gdal >=3.12.2,<3.13
         - libgdal >=3.12.2,<3.13
+        - proj 9.7.*
         - libopencv >=4.12,<5
         - lz4-c
     run:
@@ -44,6 +45,7 @@ requirements:
         - zlib
         - gdal >=3.12.2,<3.13
         - libgdal >=3.12.2,<3.13
+        - proj 9.7.*
         - libopencv >=4.12,<5
         - lz4-c
 
