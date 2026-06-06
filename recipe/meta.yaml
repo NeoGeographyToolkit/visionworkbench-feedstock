@@ -1,0 +1,65 @@
+{% set version = "3.7.0" %}
+
+package:
+    name: visionworkbench
+    version: {{ version }}
+
+source:
+  git_url: https://github.com/visionworkbench/visionworkbench.git
+  git_rev: {{ version }}
+
+build:
+    number: 0
+    string: asp_0
+    skip: true  # [win]
+
+requirements:
+    build:
+        - {{ compiler('c') }}
+        - {{ compiler('cxx') }}
+        - cmake >=3.27,<3.28
+        - make
+    host:
+        # Deps synced to asp_deps / stereopipeline-feedstock (2026-06-06).
+        # VW finds these via ASP_DEPS_DIR=$PREFIX.
+        - libboost >=1.88.0,<1.89
+        - flann
+        - libopenblas
+        - blas
+        - libjpeg-turbo
+        - libpng >=1.6.34,<1.7
+        - libtiff >=4.5,<4.8
+        - zlib
+        - proj
+        - gdal >=3.12.2,<4
+        - libgdal >=3.12.2,<4
+        - libopencv >=4.12,<5
+        - lz4-c
+    run:
+        - libboost >=1.88.0,<1.89
+        - flann
+        - libopenblas
+        - libjpeg-turbo
+        - libpng >=1.6.34,<1.7
+        - libtiff >=4.5,<4.8
+        - zlib
+        - proj
+        - gdal >=3.12.2,<4
+        - libgdal >=3.12.2,<4
+        - libopencv >=4.12,<5
+        - lz4-c
+
+test:
+    commands:
+        - test -e $PREFIX/bin/hillshade    # [unix]
+        - test -e $PREFIX/lib/libVwCore${SHLIB_EXT}  # [unix]
+
+about:
+    home: https://github.com/visionworkbench/visionworkbench
+    license: Apache-2.0
+    license_file: COPYING
+    summary: A general purpose image processing and computer vision library
+
+extra:
+  recipe-maintainers:
+    - oleg-alexandrov

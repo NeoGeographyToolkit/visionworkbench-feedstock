@@ -1,0 +1,7 @@
+# Mac: clang 18. Linux: gcc 14 (match ASP build).
+c_compiler_version:
+  - "18"   # [osx]
+  - "14"   # [linux]
+cxx_compiler_version:
+  - "18"   # [osx]
+  - "14"   # [linux]
