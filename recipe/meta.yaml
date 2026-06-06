@@ -30,10 +30,9 @@ requirements:
         - libpng >=1.6.34,<1.7
         - libtiff >=4.5,<4.8
         - zlib
-        - proj
-        - gdal 3.12.2
-        - libgdal 3.12.2
         - proj 9.7.*
+        - gdal =3.12.2
+        - libgdal =3.12.2
         - libopencv >=4.12,<5
         - lz4-c
     run:
@@ -44,10 +43,9 @@ requirements:
         - libpng >=1.6.34,<1.7
         - libtiff >=4.5,<4.8
         - zlib
-        - proj
-        - gdal 3.12.2
-        - libgdal 3.12.2
         - proj 9.7.*
+        - gdal =3.12.2
+        - libgdal =3.12.2
         - libopencv >=4.12,<5
         - lz4-c
 
