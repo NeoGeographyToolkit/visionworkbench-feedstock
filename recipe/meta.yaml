@@ -26,6 +26,10 @@ requirements:
         - flann
         - libopenblas
         - blas
+        # aarch64: force openblas - conda-forge default blas here is blis, whose
+        # aarch64 2.0 build aborts at runtime in a virtualized VM (bli_gks.c MC/MR).
+        - libblas * *openblas*      # [aarch64]
+        - liblapack * *openblas*    # [aarch64]
         - libjpeg-turbo
         - libpng >=1.6.34,<1.7
         - libtiff >=4.5,<4.8
