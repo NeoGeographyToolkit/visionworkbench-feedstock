@@ -9,8 +9,8 @@ source:
   git_rev: {{ version }}
 
 build:
-    number: 8
-    string: asp_8          # glibc floor fix (add stdlib pin)
+    number: 9
+    string: asp_9_{{ target_platform | replace("-", "_") }}          # glibc floor fix (add stdlib pin)
     skip: true  # [win]
 
 requirements:
